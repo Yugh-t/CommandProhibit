@@ -10,6 +10,8 @@ class CommandProhibit extends PluginBase
     public function onLoad() :void
     {
         $commands = yaml_parse(stream_get_contents($this->getResource("config.yml")))["commands"];
+        if (!is_array($commands)) $commands = [];
+
         $map = $this->getServer()->getCommandMap();
 
         foreach ($commands as $command)
