@@ -1,0 +1,6 @@
+name: CommandProhibit
+main: CommandProhibit\Layton\CommandProhibit
+
+api: 3.22.2
+version: 1.0
+author: Layton
